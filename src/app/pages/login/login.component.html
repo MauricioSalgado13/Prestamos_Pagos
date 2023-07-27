@@ -1,0 +1,19 @@
+<section>
+    <div class="header">
+        <div class="logo-container">
+            <img src="../../../assets/images/logo.svg">
+        </div>
+        <p class="subtitle-size bold">Préstamos y Pagos</p>
+    </div>
+    <div class="form">
+        <div *ngIf="type_user=='admin'; then admin else director"></div>
+        <ng-template #admin><p>Administrador</p></ng-template>
+        <ng-template #director>Director</ng-template>
+        <p>Ingresa la contraseña:</p>
+        <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+            <ion-button slot="end" (click)="togglePasswordVisibility()">{{ showPassword? 'Hide' : 'Show' }}</ion-button>
+        </ion-item>
+    </div>
+</section>

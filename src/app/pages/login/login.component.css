@@ -1,0 +1,47 @@
+.header{
+    padding-top: 10vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.header p{
+    margin: 0.5rem;
+}
+.logo-container{
+    background-color: var(--principal-gray);
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.logo-container img{
+    width: 40px;
+    height: 40px;
+}
+.form{
+    padding: 0 1.5rem;
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.form p {
+    margin: 0px;
+}
+.form p:first-child{
+    text-align: center;
+    margin-bottom: 3rem;
+}

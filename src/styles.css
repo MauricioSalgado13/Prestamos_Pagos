@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --principal-black: #2A3132;
+    --principal-blue: #336b87;
+    --principal-light-blue: #90afc5;
+    --principal-brown: #763626;
+    --principal-gray: #F4F5F6;
+    --secondary-brown: #945242;
+    --secondary-light-blue: #c1daec;
+    --secondary-blue: #548ba7;
+}
+@font-face {
+    font-family: 'Averis';
+    src: url('../src/assets/fonts/Metropolis-Medium.otf') format('opentype');
+  }
+@font-face {
+    font-family: 'Varela';
+    src: url('../src/assets/fonts/VarelaRound-Regular.ttf') format('opentype');
+  }
+body{
+    margin: 0;
+}
+
+*{
+    color: var(--principal-black);
+    font-family: 'Averis', 'Varela',Arial, Helvetica, sans-serif !important;
+}
+
+.title-size{
+    font-size: 32px;
+}
+
+.subtitle-size{
+    font-size: 24px;
+}
+
+.bold{
+    font-weight: 800;
+    font-style: normal;
+}
+.light-bold{
+    font-weight: 500;
+    font-style: normal;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
